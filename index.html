@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <title>Link CSS to HTML</title>
+        <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet">
+     </head>
+    <body>
+     <header>
+            <div class="inline-block logo">
+                <img src="images/Logo.png" alt="Logo" width="100">
+            </div>
+            <nav class="inline-block">
+                <ul>
+                    <li class="inline-block">About</li>
+                    <li class="inline-block">Skills</li>
+                    <li class="inline-block">Work</li>
+                    <li class="inline-block">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="heroImg">
+             <div class="content">
+                <h1>Sarah Stresnak</h1>
+                 <h3>Connecting Illustration, Design, and User Experience</h3>
+                <p>Using a  multidisciplinary approach enhances my ability to think outside the box, ensuring that my designs exceed user expectations. 
+                    My history in illustration and a passion for creating meaningful and visually compelling experiences, I've cultivated a strong eye for design that goes beyond aesthetics.</p>                 
+                <button>Download Resume</button>
+            </div>
+            <div class="image">
+            <img src="images/313857190_5859192344170699_907379545481401654_n.jpg" width="300">
+            </div>
+        </section>
+        <!--My Skills section coded using CSS Flex-->
+<section id="mySkills">
+
+    <div class="flexContainer">
+        <div class="skillCard">
+            <img src="icon1.png" alt="Icon for Skill 1">
+            <h3>Skill 1</h3>
+            <p>I use Skill 1 to accomplish various tasks in my projects, such as [brief description].</p>
+        </div>
+        <div class="skillCard">
+            <img src="icon2.png" alt="Icon for Skill 2">
+            <h3>Skill 2</h3>
+            <p>Skill 2 helps me [describe how you use the skill in your work].</p>
+        </div>
+        <div class="skillCard">
+            <img src="icon3.png" alt="Icon for Skill 3">
+            <h3>Skill 3</h3>
+            <p>With Skill 3, I [describe how this skill enhances your projects or tasks].</p>
+        </div>
+    </div>
+</section>
+ <!--  My Work section coded using CSS flex -->
+<section id="myWork-Grid">
+    <h2>My Work</h2>
+    <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project--details">
+            <h2> Project 1 Case Study</h2>
+            <p>Text</p>
+            <button>View Case Study</button>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project--details">
+            <h2>Project 2 Case Study</h2>
+            <p>For project 2, I focused on [brief description of project 2].</p>
+            <button>View Case Study</button>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="project--details">
+            <h2>Project 3 Case Study</h2>
+            <p>Project 3 revolved around [brief description of project 3].</p>
+            <button>View Case Study</button>
+        </div>
+    </div>
+    <h4>View All Projects</h4>
+</section>
+
+        <footer>
+            <ul>
+                <li class="inline-block">About</li>
+                <li class="inline-block">Skills</li>
+                <li class="inline-block">Work</li>
+                <li class="inline-block">Contact</li>
+            </ul>
+        </footer>
+    </body>
 </html>
