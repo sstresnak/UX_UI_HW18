@@ -34,21 +34,16 @@ nav ul li {
   display: inline-block;
   margin-left: 50px;
 }
-
 .heroImg {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 600px;
-  padding: 50px 100px 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 500px;
+padding: 50px 100px 30px;
 }
 .heroImg .content {
-  width: 50%;
+width: 60%;
 } 
-.heroImg img {
-  width: 300px;
-  height: auto;
-}
 .heroImg h1, .heroImg h3, .heroImg p {
   margin: 0;
 }
@@ -69,15 +64,25 @@ nav ul li {
   font-style: normal;
   color: white;
 }
-.image {
-  height: 700px;
+.heroImg .image img {
+  max-width: 60%;
+  height: auto;
+  display: block; 
+  margin: 0 auto; 
 }
+.heroImg img {
+max-width: 100%;
+}
+.image {
+height: 600px;
+}
+
 
 body {
   background-color: #C3CFB8;
 }
 .content {
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
 }
 
