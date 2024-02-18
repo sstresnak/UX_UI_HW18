@@ -124,6 +124,7 @@ button:hover {
   margin-top: 30px; 
   background-color: #FFF494;
   padding: 20px;
+  margin-right: 20px;
 }
 .skillCard img {
   display: block;
@@ -149,50 +150,74 @@ button:hover {
   top: -25px; /* Adjust the position to fit behind the skill cards */
   left: 0;
   width: 100%;
-  height: 50px; /* Adjust height to control the size of the semi-circle */
+  height: 80px; /* Adjust height to control the size of the semi-circle */
   background-color: #FFF494; /* Background color of the semi-circle */
   border-top-left-radius: 100%;
   border-top-right-radius: 50%;
   content: '9088';
 }
-
 #mySkills {
   position: relative;
   margin-bottom: 200px;
+  padding-left: 50px;
 }
-
 .skillCard:nth-child(1) {
   left: 10%;
   padding-left: 20px;
 }
-
 .skillCard:nth-child(2) {
   margin-top: 70px; 
 }
-
 .skillCard:nth-child(3) {
   margin-top: 150px; 
 }
 
 #myWork-Grid {
-  display: grid;
-  grid-template-rows: max-content 3fr 3fr 3fr max-content;
- padding: 20px;
- margin: 20px;
- gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px auto;
+  gap: 20px;
+  text-align: center;
+  background-color: #6F8F71;
+  padding-top: 100px;
+  font-family: 'Livvic', sans-serif;
+  color: #493500;
 }
 .project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+  width: 850px; /* Set a specific width */
+  height: 350px; /* Set a specific height */
+  background-color: #FFF494; /* Add a background color */
+  padding: 20px;
+  border-radius: 10px; 
 }
-#myWork-Grid h2 {
-  justify-self: start;
-  align-self: end;
+.project-card img {
+  max-width: 100%;
 }
-#myWork-Grid h4 {
-  justify-self: end;
-  align-self: end;
+.project--details {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;  
+}
+#view-all-button {
+  background-color: #C3CFB8; /* Set the background color */
+  color:black; 
+  border: 2px solid #6F8F71; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s;
+}
+#myWork-Grid button {
+  margin-bottom: 20px; 
+  font-family: 'Livvic', sans-serif;
 }
 
 footer {
@@ -210,4 +235,16 @@ footer ul li {
   margin-right: 70px; 
   font-family: "Krub", sans-serif;
   color: white;
+}
+@media only screen and (max-width: 600) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .flexContainer .flex-child {
+    width: 100%;
+  }
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
