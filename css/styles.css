@@ -236,11 +236,12 @@ footer ul li {
   font-family: "Krub", sans-serif;
   color: white;
 }
-@media only screen and (max-width: 600px), (max-width: 900px), (max-width: 1200px) {
+
+@media only screen and (max-width: 600px) {
   .heroImg {
     flex-direction: column;
   }
-  .skillContainer{
+  .skillContainer {
     flex-wrap: nowrap;
     overflow-x: auto;
   }
@@ -258,4 +259,3 @@ footer ul li {
     grid-template-rows: auto;
   }
 }
- 
