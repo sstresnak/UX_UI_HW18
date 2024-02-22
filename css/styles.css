@@ -236,7 +236,17 @@ footer ul li {
   font-family: "Krub", sans-serif;
   color: white;
 }
-@media only screen and (max-width: 600) {
+@media only screen and (max-width: 600px), (max-width: 900px), (max-width: 1200px) {
+  .heroImg {
+    flex-direction: column;
+  }
+  .skillContainer{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #myWork-Grid {
+    flex-direction: column;
+  }
   .flexContainer {
     flex-direction: column;
   }
@@ -248,3 +258,4 @@ footer ul li {
     grid-template-rows: auto;
   }
 }
+ 
